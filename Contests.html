@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<head>
+	<h2>Register for Atascocita Tournament</h2>
+	<script>
+		var print = function() {
+			var n = document.forms["signupinfo"]["name"].value
+			confirm(n);
+		};
+
+		print();
+	</script>
+</head>
+<body>
+	<form name = "signupinfo" action="http://www.w3schools.com/js/tryit.asp?filename=tryjs_form_validate_email" <!-- need to find valid URL -->>
+		<h4>Name</h4>
+		Name: <input type = "text" name = "name"><br>
+		<h4>Grade Level</h4>
+		<input type="radio" name="gradeLevel" value="9">9<br>
+		<input type="radio" name="gradeLevel" value="10">10<br>
+		<input type="radio" name="gradeLevel" value="11">11<br>
+		<input type="radio" name="gradeLevel" value="12">12<br>
+		<h4>Which tests do you want to sign up for?</h4>
+		<input type="checkbox" name="tests" value="NS">Number Sense<br>
+		<input type="checkbox" name="tests" value="CA">Calculator<br>
+		<input type="checkbox" name="tests" value="MA">General Math<br>
+		<input type="checkbox" name="tests" value="SC">Science<br>
+		<h4>Enter your email address</h4>
+		E-mail: <input type = "text" name = "email"><br>
+		<h4>Enter our math and science club password</h4>
+		Password:<input type = "password" name = "password"><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
